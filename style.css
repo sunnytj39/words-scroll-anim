@@ -1,0 +1,13 @@
+.slide-wrapper {
+  position: relative;
+  margin: 10px auto;
+  background-color: lightblue;
+  width: 300px;
+  height: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.slide-target {
+  position: absolute;
+}
+
