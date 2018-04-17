@@ -1,6 +1,3 @@
-// アニメーション間隔(s)
-const DURATION = 6;
-
 // アニメーション対象取得
 var anim_targets = document.getElementsByClassName("slide-target");
 var anim_wrappers = document.getElementsByClassName("slide-wrapper");
@@ -13,6 +10,9 @@ var anim_wrappers = document.getElementsByClassName("slide-wrapper");
 
   // 親要素と文字列の差を計算
   var diff = target_width - wrapper_width;
+
+  // アニメーション時間
+  var DURATION = diff / 40;
 
   // 親要素からはみ出している場合スクロール適用
   if (diff > 0) {
